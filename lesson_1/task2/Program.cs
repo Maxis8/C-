@@ -6,9 +6,11 @@ Console.WriteLine("Введите число: ");
 int b = int.Parse(Console.ReadLine());
 if (a > b)
 {
-    Console.Write ($"max = {a}");
+    Console.WriteLine($"max = {a}");
+    Console.WriteLine($"min = {b}");
 }
  else 
 {
-     Console.Write ($"max = {b}");
+     Console.WriteLine($"max = {b}");
+     Console.WriteLine($"min = {a}");
 }

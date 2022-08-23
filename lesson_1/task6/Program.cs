@@ -2,6 +2,8 @@
 
 Console.Write("Введите число: ");
 int num = int.Parse(Console.ReadLine());
-double result = num / 2;
-if (num == result * 2) Console.Write("Да");
-else Console.Write("Нет");
+//double result = num / 2;
+//if (num == result * 2) Console.Write("Чётное");
+//else Console.Write("Нечётное");
+if(num % 2 == 0) Console.WriteLine("Чётное");
+else Console.WriteLine("Нечётное");
