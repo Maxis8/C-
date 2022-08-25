@@ -4,13 +4,13 @@ Console.WriteLine("Введите число: ");
 int a = int.Parse(Console.ReadLine());
 Console.WriteLine("Введите число: ");
 int b = int.Parse(Console.ReadLine());
+int max;
 if (a > b)
 {
-    Console.WriteLine($"max = {a}");
-    Console.WriteLine($"min = {b}");
+    max = a;
 }
  else 
 {
-     Console.WriteLine($"max = {b}");
-     Console.WriteLine($"min = {a}");
+     max = b;
+     Console.WriteLine($"max = {max}");
 }
