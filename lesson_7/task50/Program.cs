@@ -22,7 +22,7 @@ int[,] GetArray(int m, int n, int minValue, int maxValue)
 }
 void PrintArray(int[,] arr, int num)
 {
-    int count = 0;                             // не прошло и года, я вышел...
+    int count = 0;                             
     for(int i = 0; i < arr.GetLength(0); i++)
     {
         for(int j = 0; j < arr.GetLength(1); j++)

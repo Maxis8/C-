@@ -18,20 +18,20 @@ int[,] GetArray(int m, int n, int minValue, int maxValue)
     }
      return result;
 }
-void PrintArray(int[,] arr)
+void PrintArray(int[,] arr, int m)
 {
-    int count = 0;
+    //int count = 0;
     double sum = 0;
     for(int j = 0; j < arr.GetLength(1); j++)
    { 
         for(int i = 0; i < arr.GetLength(0); i++)
         {
         sum += arr[i,j];
-        count++;
+        //count++;
         }
-        double res = sum / count;
+        double res = sum /m; //count;
         Console.Write("{0:0.0}\t" , res);
-        count = 0;
+        //count = 0;
         sum = 0;
    } 
 }
@@ -45,4 +45,4 @@ Console.WriteLine("Введите максимальное значение ди
 int max = int.Parse(Console.ReadLine());
 int[,]myArray= GetArray(m,n,min,max);
 Console.WriteLine();
-PrintArray( myArray);
+PrintArray( myArray, m);
