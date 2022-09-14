@@ -8,7 +8,7 @@ int MoreZeroNums(int numb)
     while( i < numb)
     { 
     Console.WriteLine("Введите число: "); 
-    int number = int.Parse(Console.ReadLine());
+    int number = Convert.ToInt32(Console.ReadLine());
     i++;
     if(number > 0) count++;
     }
@@ -19,5 +19,5 @@ int MoreZeroNums(int numb)
 
 
 Console.WriteLine("Введите количество чисел: ");
-int num = int.Parse(Console.ReadLine());
+int num = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine($"Количество чисел больше нуля: {MoreZeroNums(num)}");
